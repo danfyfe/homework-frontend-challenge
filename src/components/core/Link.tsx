@@ -1,11 +1,11 @@
-import NextLink, { LinkProps } from "next/link";
+import NextLink, { LinkProps as Props } from "next/link";
 
-interface Link extends LinkProps {
+interface LinkProps extends Props {
 	className?: string;
 	children: string;
 }
 
-const Link = ({ children, href, className }: Link) => (
+const Link = ({ children, href, className }: LinkProps) => (
 	<NextLink href={href} className={`${className ? className : ''}`}>
 		{children}
 	</NextLink>

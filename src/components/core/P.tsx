@@ -1,9 +1,9 @@
 import { CoreContent } from "@/app/useData";
 
-interface P extends CoreContent { };
+interface PProps extends CoreContent { };
 
 
-const P = ({ className, children }: P) => (
+const P = ({ className, children }: PProps) => (
 	<p className={`${className ? className : ''}`}>
 		{children}
 	</p>

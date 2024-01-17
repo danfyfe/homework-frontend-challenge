@@ -1,8 +1,8 @@
 import { CoreContent } from "@/app/useData";
 
-interface H3 extends CoreContent { };
+interface H3Props extends CoreContent { };
 
-const H3 = ({ className, children }: H3) => (
+const H3 = ({ className, children }: H3Props) => (
 	<h3 className={`${className ? className : ''}`}>
 		{children}
 	</h3>

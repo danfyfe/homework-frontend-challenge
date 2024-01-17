@@ -1,10 +1,10 @@
-import NextImage, { ImageProps } from "next/image";
+import NextImage, { ImageProps as Props } from "next/image";
 
-interface Image extends ImageProps {
+interface ImageProps extends Props {
 	className?: string;
 }
 
-const Image = ({ alt, src, className, width, height }: Image) => (
+const Image = ({ alt, src, className, width, height }: ImageProps) => (
 	<NextImage
 		src={src}
 		alt={alt}
