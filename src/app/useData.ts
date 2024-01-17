@@ -9,6 +9,12 @@ export interface Image {
 export interface Button {
   text: string;
   href: string;
+  className?: string;
+}
+
+export interface CoreContent {
+	className?: string;
+	children: React.ReactNode;
 }
 
 export interface MockData {
