@@ -1,5 +1,5 @@
 import { describe, expect, it } from '@jest/globals';
-import { render, cleanup } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import {
 	P,
 	H2,
@@ -11,7 +11,6 @@ import {
 
 
 describe('P', () => {
-	afterEach(cleanup);
 	const container = render(<P className='mb-2'>P Test content</P>);
 	const element = container.getByText("P Test content");
   it('Renders a P element', () => {
