@@ -32,3 +32,9 @@ export interface ItemRowType {
 	}[];
 	button?: Button;
 }
+
+export interface ItemRowItem {
+	img?: Image | undefined;
+	heading?: string;
+	body?: string;
+}
