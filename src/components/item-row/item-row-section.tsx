@@ -7,7 +7,11 @@ const ItemRowSection = ({ heading, items, button }: ItemRowType) => (
 	<section className='bg-aqua w-full p-5 md:py-14 md:px-5'>
 		<H2 className='mb-4 md:mb-8'>{heading}</H2>
 		<ItemRowItems items={items} />
-		<ItemRowCTA   button={button} />
+		{
+			button ? (
+				<ItemRowCTA button={button} />
+			) : null
+		}
 	</section>
 );
 
