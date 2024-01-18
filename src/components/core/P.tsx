@@ -1,4 +1,4 @@
-import { CoreContent } from "@/hooks/useData";
+import { CoreContent } from "@/interfaces";
 
 interface PProps extends CoreContent { };
 
