@@ -8,15 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'copy': 'HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif'
+      },
       fontSize: {
         'h2-mob': ['1.5rem', '2rem'],
         'h2-desk': ['2rem', '2.5rem'],
-        'h3-mob': '',
-        'h3-desk': '',
-        'p-mob': '',
-        'p-desk': '',
-        'cta-mob': '',
-        'cta-desk': ''
+        'h3': ['1rem', '1.5rem'],
+        'p': ['1rem', '1.25rem'],
+        'cta': ['1.125rem', '1.75rem']
       },
       colors: {
         'aqua': '#effaf9',

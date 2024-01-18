@@ -1,8 +1,9 @@
 import NextLink, { LinkProps as Props } from "next/link";
+import { ReactNode } from "react";
 
 interface LinkProps extends Props {
 	className?: string;
-	children: string;
+	children: ReactNode;
 }
 
 const Link = ({ children, href, className }: LinkProps) => (

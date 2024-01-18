@@ -6,7 +6,7 @@ export interface Image {
   
 export interface Button {
 	text?: string;
-	href?: string;
+	href: string;
 	className?: string;
 }
 
