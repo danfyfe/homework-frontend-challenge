@@ -1,4 +1,4 @@
-import { Button } from "@/app/useData";
+import { Button } from "@/hooks/useData";
 import Link from "@/components/core/Link";
 
 const CTA = ({ text, href, className }: Button) => (

@@ -1,4 +1,4 @@
-import { CoreContent } from "@/app/useData";
+import { CoreContent } from "@/hooks/useData";
 
 interface H2Props extends CoreContent { };
 

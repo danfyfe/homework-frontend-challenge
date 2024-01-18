@@ -7,13 +7,11 @@ import {
 		Link,
 		CTA
 } from '@/components/core';
-// import { ItemRow}
 
-// ItemRowCard
 
 const ItemRowCard = ({}) => {
 	return (
-		<article className="w-full md:w-1/4 flex md:flex-col">
+		<article className="w-full md:w-1/4 flex md:flex-col mb-5 md:mb-8">
 				<Image
 					width={56}
 					height={56}
@@ -34,7 +32,7 @@ const ItemRow = () => {
 	return (
 		<section className='bg-aqua w-full py-5 px-5 md:py-14 md:px-24'>
 			<H2 className='mb-4 md:mb-8'>Make the most of playtime</H2>
-			<div className='flex flex-wrap flex-col md:flex-row md:justify-evenly'>
+			<div className='flex flex-wrap flex-col md:flex-row md:justify-evenly mb-5 md:mb-10'>
 				{
 					[1,2,3,4,5,6].map((item) => {
 						return (
@@ -45,7 +43,7 @@ const ItemRow = () => {
 			</div>
 			<div className='flex flex-col justify-center items-center'>
 				<CTA text="Get Started" href="/" />
-				<P className='text-center'>
+				<P className='text-center mt-2'>
 					Free Shipping | Cancel Any Time
 				</P>
 			</div>

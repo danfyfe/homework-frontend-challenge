@@ -1,4 +1,4 @@
-import { CoreContent } from "@/app/useData";
+import { CoreContent } from "@/hooks/useData";
 
 interface H3Props extends CoreContent { };
 
