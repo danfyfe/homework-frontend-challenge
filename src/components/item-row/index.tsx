@@ -5,9 +5,8 @@ import {
 	Loading,
 	ComponentError
 } from '@/components/core';
-import ItemRowItems from '@/components/item-row/item-row-items';
-import ItemRowCTA from '@/components/item-row/item-row-cta';
 import { useData } from '@/hooks/useData';
+import ItemRowSection from './item-row-section';
 
 
 const ItemRow = () => {
@@ -17,11 +16,10 @@ const ItemRow = () => {
 	const itemRowData: ItemRowType | undefined = data?.itemRow;
 
 	return itemRowData ? (
-		<section className='bg-aqua w-full p-5 md:py-14 md:px-5'>
-			<H2 className='mb-4 md:mb-8'>{itemRowData.heading}</H2>
-			<ItemRowItems items={itemRowData.items} />
-			<ItemRowCTA   button={itemRowData.button} />
-		</section>
+		<ItemRowSection
+			heading={itemRowData.heading}
+			items={itemRowData.items}
+			button={itemRowData.button} />
 	) : null
 };
 
