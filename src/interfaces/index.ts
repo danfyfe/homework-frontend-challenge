@@ -11,25 +11,24 @@ export interface Button {
 }
 
 export interface CoreContent {
-		className?: string;
-		children: React.ReactNode;
+	className?: string;
+	children: React.ReactNode;
 }
 
-export interface MockData {
-	mediaBanner: {
+export interface MediaBanner {
+	img?: Image;
+	leadingText?: string;
+	heading?: string;
+	orientation?: "left" | "right";
+	button?: Button;
+}
+
+export interface ItemRowType {
+	heading?: string;
+	items?: {
 		img?: Image;
-		leadingText?: string;
 		heading?: string;
-		orientation?: "left" | "right";
-		button?: Button;
-	};
-	itemRow: {
-		heading?: string;
-		items?: {
-			img?: Image;
-			heading?: string;
-			body?: string;
-		}[];
-		button?: Button;
-	};
+		body?: string;
+	}[];
+	button?: Button;
 }

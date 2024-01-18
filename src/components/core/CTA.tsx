@@ -5,7 +5,7 @@ const CTA = ({ text, href, className }: Button) => (
 	<Link
 		href={href}
 		className={`
-			min-h-[3rem] sm:h-16 w-full md:w-1/4
+			min-h-[3rem] sm:h-16 w-full sm:w-auto
 			px-9 rounded-sm
 			text-white text-lg font-bold
 			bg-cta-blue hover:bg-cta-blue-hover
