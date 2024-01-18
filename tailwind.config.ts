@@ -8,15 +8,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      fontSize: {
+        'h2-mob': ['1.5rem', '2rem'],
+        'h2-desk': ['2rem', '2.5rem'],
+        'h3-mob': '',
+        'h3-desk': '',
+        'p-mob': '',
+        'p-desk': '',
+        'cta-mob': '',
+        'cta-desk': ''
       },
       colors: {
+        'aqua': '#effaf9',
+        'charcoal': '#514f4e',
         'cta-blue': '#536dc4',
-        'cta-blue-hover': '#3b54ab',
-        'charcoal': '#514f4e'
+        'cta-blue-hover': '#3b54ab'
       }
     },
   },
