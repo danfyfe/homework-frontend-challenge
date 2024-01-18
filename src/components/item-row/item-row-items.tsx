@@ -1,7 +1,7 @@
 import ItemRowCard from "@/components/item-row/item-row-card";
 
 const ItemRowItems = ({ items }) => (
-	<div className='flex flex-wrap flex-col md:flex-row md:justify-evenly mb-5 md:mb-10'>
+	<div className='flex flex-wrap flex-col md:flex-row md:justify-evenly'>
 		{
 			items.map((item, index: number) => {
 				return (

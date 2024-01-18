@@ -17,7 +17,7 @@ const ItemRow = () => {
 	const itemRowData: ItemRowType | undefined = data?.itemRow;
 
 	return itemRowData ? (
-		<section className='bg-aqua w-full p-5 md:py-14 md:px-24'>
+		<section className='bg-aqua w-full p-5 md:py-14 md:px-5'>
 			<H2 className='mb-4 md:mb-8'>{itemRowData.heading}</H2>
 			<ItemRowItems items={itemRowData.items} />
 			<ItemRowCTA   button={itemRowData.button} />
